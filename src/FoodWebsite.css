@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 2rem;
+    position: relative;
+}
+
+.menu-section {
+    width: 100%;
+    padding-right: 1.5rem;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.food-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.food-card {
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+}
+
+.food-image {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.food-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.food-description {
+    color: #666;
+    margin: 0.5rem 0;
+}
+
+.order-button {
+    margin-top: 1rem;
+    background-color: #22c55e;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+.order-button:hover {
+    background-color: #16a34a;
+}
+
+.chatbot-container {
+    width: 80%;
+    max-width: 350px;
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .menu-section {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .chatbot-container {
+        position: fixed;
+        width: 100%;
+        margin-top: 2rem;
+    }
+}
