@@ -72,7 +72,7 @@ body {
 }
 
 .chatbot-container {
-    width: 80%;
+    width: 50%;
     max-width: 350px;
     position: fixed;
     right: 1rem;
@@ -94,7 +94,8 @@ body {
 
     .chatbot-container {
         position: fixed;
-        width: 100%;
+        width: 50%;
+        height: 30%;
         margin-top: 2rem;
     }
 }
